@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { PRODUCTS } from "./Products";
 
 function ProductDetailPage() {
@@ -10,6 +10,11 @@ function ProductDetailPage() {
     <>
       <h1>Product Detail</h1>
       <p>{product.title}</p>
+      <p>
+        <Link to=".." relative="path">
+          Back
+        </Link>
+      </p>
     </>
   );
 }
